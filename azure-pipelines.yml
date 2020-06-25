@@ -15,6 +15,6 @@ steps:
   
 - task: CmdLine@2
   inputs: 
-    script: data = Get-content $(Build.SourcesDirectory)/config.json| out-string | ConvertFrom-Json
+    script: Get-content $(Build.SourcesDirectory)/config.json| out-string | ConvertFrom-Json
     #workingDirectory: # Optional
     #failOnStderr: false # Optional
