@@ -13,8 +13,6 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
   
-tasks:
-  
 - task: CmdLine@2
   inputs: 
     script: data = Get-content $(Build.SourcesDirectory)/config.json| out-string | ConvertFrom-Json
