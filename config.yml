@@ -1,2 +1,3 @@
-resourcegroup: testrg
-aksname: testaks
+variables:
+  resourcegroup: 'testrg'
+  aksname: 'testaks'
