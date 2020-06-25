@@ -16,7 +16,7 @@ steps:
 tasks:
   
 - task: CmdLine@2
-  inputs: data = Get-content {your JSON file path}| out-string | ConvertFrom-Json
-    script: 'echo Write your commands here.' 
+  inputs: 
+    script: data = Get-content $(Build.SourcesDirectory)/config.json| out-string | ConvertFrom-Json
     #workingDirectory: # Optional
     #failOnStderr: false # Optional
