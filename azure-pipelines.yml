@@ -13,8 +13,4 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
   
-- task: CmdLine@2
-  inputs: 
-    script: Get-content $(Build.SourcesDirectory)/config.json| out-string | ConvertFrom-Json
-    #workingDirectory: # Optional
-    #failOnStderr: false # Optional
+
